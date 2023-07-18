@@ -1,0 +1,22 @@
+OVERVIEW OF REINFORCEMENT LEARNING WITH TIC TAC TOE AND PYTHON
+
+install requirements.py using command "pip install -r requirements.txt"
+to start the game, run game.py file using command "python game.py"
+
+changing game modes:
+    -> press "j" to play with Machine Learning Bot
+    -> press "k" to play with MiniMax Algorithm
+    -> press "l" to play in PVP
+    
+-> press "c" to reset game
+
+playing with Bot:
+    -> press "c" to clear screen and reseting game
+    -> press "r" to save the data for the ML Bot to use in next game, after a game is finished
+    -> use command "python game_data_print.py" to print the game_data in termial
+
+<<<<<<< HEAD
+ENJOY 😉
+=======
+ENJOY 😉
+>>>>>>> 886bf01 (first commit)
