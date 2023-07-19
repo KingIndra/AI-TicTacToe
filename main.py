@@ -25,21 +25,6 @@ screen = pygame.display.set_mode((600, 600))
 pygame.display.set_caption('TIC TAC TOE <AI/>')
 screen.fill(BG_COLOR)
 
-def print_data(data):
-    game_space_link = game_data['game_space_link']
-    game_space = game_data['game_space']
-
-    print('')
-    print(f'number of games played: {game_data["no_of_games"]}')
-    print('')
-    print('GAME_SPACE_LINK: ')
-    for state in game_space_link:
-        print(f'{state} : {game_space_link[state]}') 
-    print('')
-    print('GAME_SPACE:')
-    for state in game_space:
-        print(f'{state} : {game_space[state]}')
-    print('')
 
 class Board:
 
@@ -116,21 +101,31 @@ class BOT:
 
     def __init__(self):
         # constructor body
+        self.filemode = False
         self.game_stack = [] # initializing a stack to upadte game_space
         self.filename = 'game_data.pkl'
         # loading game_data pickel file
-        if os.path.exists(self.filename):
-            with open(self.filename, 'rb') as f:
-                self.game_data = pickle.load(f)
+        if self.filemode:
+            if os.path.exists(self.filename):
+                with open(self.filename, 'rb') as f:
+                    self.game_data = pickle.load(f)
+            else:
+                # initializing game_data dictionary if game_data file does not exist
+                self.game_data = {'no_of_games':0, 'game_space_link':{}, 'game_space':{}}
         else:
-            # initializing game_data dictionary if game_data file does not exist
             self.game_data = {'no_of_games':0, 'game_space_link':{}, 'game_space':{}}
         # initializing pointers for game_space_link and game_space dict
         self.game_space_link = self.game_data['game_space_link']
         self.game_space = self.game_data['game_space']
+
     
-    # def clear(self):
-    #     self.game_data
+    def clear(self):
+        self.__init__()
+        if self.filemode:
+            if os.path.exists(self.filename):
+                with open(self.filename, 'rb') as f:
+                    pickle.dump(self.game_data, f)
+
 
     def getHash(self, board_squares): # return hash of the given 3x3 matrix
         # repshaping 3x3 matrix to a 1d array
@@ -259,7 +254,6 @@ class BOT:
             j += 1
 
         return moves
-    
     
     def switch(self, board, lst): 
         # switching the values of coordinate of a 3X3 matrix
@@ -422,8 +416,9 @@ class BOT:
         # self.game_data['game_space'] = self.game_space
 
         # dumping the pickle file
-        with open(self.filename, 'wb') as f:
-            pickle.dump(self.game_data, f)
+        if self.filemode:
+            with open(self.filename, 'wb') as f:
+                pickle.dump(self.game_data, f)
 
 
 class MinMax:
@@ -432,6 +427,7 @@ class MinMax:
         self.player = player
         self.counter = 0
         self.cc = 1
+        self.hashMap = {}
     
     def getHash(self, board_squares): # return hash of the given 3x3 matrix
         # repshaping 3x3 matrix to a 1d array
@@ -587,11 +583,10 @@ class MinMax:
             return min_eval, best_move
 
     def eval(self, main_board):
-        start = time.time()
-        self.hashMap = {}
+        # start = time.time()
         eval, move = self.minimax(main_board, False)
-        end = time.time()
-        print("The time of execution minimax function is :",(end-start) * 10**3, "ms")
+        # end = time.time()
+        # print("The time of execution minimax function is :",(end-start) * 10**3, "ms")
         return move # row, col
     
     def reset(self):
@@ -701,7 +696,8 @@ async def main():
                     game.reset()
                     minmax.reset()
                     game.gamemode = game_mode
-                    ai.game_data
+                    print("game_data cleared")
+                    ai.clear()
                     
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = event.pos
