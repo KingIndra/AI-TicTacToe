@@ -7,6 +7,10 @@ NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
 
 - This is Reinforcement Learning mode, Bot learns to play with experience.
 
+
+https://github.com/KingIndra/AI-TicTacToe/assets/81245566/c550072b-bae6-4f18-ac66-64e1e0bec818
+
+
 <video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
 
 - This is Optimized MiniMax mode, now bot is impossible to beat.
