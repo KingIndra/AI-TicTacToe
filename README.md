@@ -1,7 +1,7 @@
 # OVERVIEW OF REINFORCEMENT LEARNING WITH TIC TAC TOE AND PYTHON
 
 -> click on this link   https://kingindra.itch.io/tic-tac-toe-with-ai   to play this game on itch.io <-
-- NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
+- NOTE: game might take upto 60 Seconds in some cases, do not leave the tab, you can watch the video below !
 
 <hr>
 
