@@ -6,20 +6,16 @@ NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
 ```
 
 - This is Reinforcement Learning mode, Bot learns to play with experience.
-
-
+- 
 https://github.com/KingIndra/AI-TicTacToe/assets/81245566/c550072b-bae6-4f18-ac66-64e1e0bec818
-
-
-<video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
 
 - This is Optimized MiniMax mode, now bot is impossible to beat.
 
-<video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
+https://github.com/KingIndra/AI-TicTacToe/assets/81245566/2e8d3133-a84f-46e1-b4f5-b55a314107e6
 
 - This is Player vs PLayer mode.
 
-<video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
+https://github.com/KingIndra/AI-TicTacToe/assets/81245566/e61d7a83-db89-4c1d-aaaf-19a4f7f82956
 
 ```
 - Here we have 2 ways of playing this game:
