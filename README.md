@@ -1,9 +1,10 @@
-OVERVIEW OF REINFORCEMENT LEARNING WITH TIC TAC TOE AND PYTHON
+# OVERVIEW OF REINFORCEMENT LEARNING WITH TIC TAC TOE AND PYTHON
 
+```
 -> click on this link   https://kingindra.itch.io/tic-tac-toe-with-ai   to play this game on itch.io <-
 NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
-
-Here we have 2 ways of playing this game:
+```
+- Here we have 2 ways of playing this game:
 
     -> In Browser
         1. inside build -> web -> run index.html
@@ -26,5 +27,5 @@ Here we have 2 ways of playing this game:
         
         -> press "L" to play in PVP
             -> press "C" to clear
-    
-ENJOY 😉
+
+### ENJOY 😉
