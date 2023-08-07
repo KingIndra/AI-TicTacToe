@@ -6,14 +6,18 @@ NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
 ```
 
 - This is Reinforcement Learning mode, Bot learns to play with experience.
+
 <video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
 
 - This is Optimized MiniMax mode, now bot is impossible to beat.
+
 <video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
 
 - This is Player vs PLayer mode.
+
 <video src="video/video_2023-08-07_19-14-35.mp4" controls title="Title"></video>
 
+```
 - Here we have 2 ways of playing this game:
 
     -> In Browser
@@ -37,5 +41,6 @@ NOTE: game might take upto 60 Seconds in some cases, do not leave the tab
     
     - press "L" to play in PVP
         - press "C" to clear
+```
 
 ### ENJOY 😉
