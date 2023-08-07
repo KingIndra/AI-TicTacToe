@@ -5,7 +5,7 @@
 
 <hr>
 
-![image](https://github.com/KingIndra/AI-TicTacToe/assets/81245566/1b57bae5-833a-4875-9f33-f9c8ea45a434)
+<img width="500" alt="image" src="https://github.com/KingIndra/AI-TicTacToe/assets/81245566/ad6daf0c-7905-4975-92b7-f64f92996c9a">
 
 <hr>
 
