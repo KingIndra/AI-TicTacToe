@@ -52,5 +52,3 @@ https://github.com/KingIndra/AI-TicTacToe/assets/81245566/e61d7a83-db89-4c1d-aaa
     - press "L" to play in PVP
         - press "C" to clear
 ```
-
-### ENJOY 😉
